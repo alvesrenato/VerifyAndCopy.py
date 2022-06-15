@@ -23,7 +23,7 @@ for matricula in matriculas:
         print('Não foi: '+ matricula)
 
 
-
+# 
 # if os.path.exists(caminhoOriginal):
 #     print ("o arquivo existe")
 # else:
