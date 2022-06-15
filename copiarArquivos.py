@@ -2,13 +2,17 @@ from genericpath import exists
 import os
 import shutil
 
+caminhoNovo = input('selecione a pasta de destino: ')
+caminhoNovo += '/'
+
+
 meuArquivo = open('U:/PROJETOS/Rosário/2022/CARTEIRINHA PROVISÓRIA/15-06-22-PRODUÇÃO - CARTEIRINHA ESCOLAR - FUTUROESCOLAR/matriculas.txt','r')
 matriculas = meuArquivo.readlines()
 
 # print(matriculas)
 
 caminhoOriginal = 'Y:/7. RENATO ALVES/foto/CARTEIRINHA/'
-caminhoNovo = 'U:/PROJETOS/Rosário/2022/CARTEIRINHA PROVISÓRIA/15-06-22-PRODUÇÃO - CARTEIRINHA ESCOLAR - FUTUROESCOLAR/'
+
 
 for matricula in matriculas:
     matricula = matricula.replace('\n','')
